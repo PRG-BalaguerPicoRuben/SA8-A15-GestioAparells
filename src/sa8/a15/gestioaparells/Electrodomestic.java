@@ -25,6 +25,17 @@ public class Electrodomestic {
         this.pes = 5;
     }
     
+    public double obtindrePreuVenda() {
+        double preuVenda = this.preBase;
+        
+        switch(lletraConsum){
+            case A:
+                preuVenda += 100;
+                break;
+        }
+        return preuVenda;
+    }
+    
     
     
     
