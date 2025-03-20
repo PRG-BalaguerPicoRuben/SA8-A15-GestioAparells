@@ -4,11 +4,13 @@
  */
 package sa8.a15.gestioaparells;
 
+import static sa8.a15.gestioaparells.consumEnergetic.A;
+
 /**
  *
  * @author batoi
  */
-public class Electrodomestic {
+public abstract class Electrodomestic {
 
     private int numSerie;
     private int preBase;
@@ -31,6 +33,21 @@ public class Electrodomestic {
         switch(lletraConsum){
             case A:
                 preuVenda += 100;
+                break;
+            case B:
+                preuVenda += 80;
+                break;
+            case C:
+                preuVenda += 60;
+                break;
+            case D:
+                preuVenda += 50;
+                break;
+            case E:
+                preuVenda += 30;
+                break;
+            case F:
+                preuVenda += 10;
                 break;
         }
         return preuVenda;
