@@ -33,10 +33,13 @@ public class Televisio extends Electrodomestic{
     
     @Override
     public double obtindrePreuVenda(){
-        if(resolucio >= 40){
-            return super.obtindrePreuVenda() * 0.3;
+        double multiplicador;
+        if(resolucio > 40){
+            multiplicador = 1.3;
+        } else {
+            multiplicador = 1;
         }
-        return super.obtindrePreuVenda();
+        return super.obtindrePreuVenda() * multiplicador;
     }
     
     

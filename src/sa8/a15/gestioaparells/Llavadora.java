@@ -27,8 +27,10 @@ public class Llavadora extends Electrodomestic {
     
     @Override
     public double obtindrePreuVenda(){
+        double preuExtra = 0;
         if(this.carrega >= 10){
             carrega += 50;
         }
+        return super.obtindrePreuVenda() + preuExtra;
     }
 }
