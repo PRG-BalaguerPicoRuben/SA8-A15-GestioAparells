@@ -16,12 +16,10 @@ public class Computador extends Dispositiu{
     private int velocitatCPU;
     private int grandariaDisco;
 
-    public Computador(int numSerie, boolean teCorrentElectrica, boolean estaEnces,int memoriaRam, int velocitatCPU, int grandariaDisco) {
-        super(numSerie, teCorrentElectrica, estaEnces);
+    public Computador(String nom, String numeroSerie, boolean teCorrentElectrica, boolean estaEnces, boolean connectatInternet, int memoriaRam, int velocitatCPU, int grandariaDisco) {
+        super(estaEnces, teCorrentElectrica, connectatInternet, nom, numeroSerie); // Corrección de la llamada a super()
         this.memoriaRam = memoriaRam;
         this.velocitatCPU = velocitatCPU;
         this.grandariaDisco = grandariaDisco;
     }
-    
-    
 }

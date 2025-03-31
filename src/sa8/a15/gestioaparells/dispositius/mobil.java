@@ -4,6 +4,7 @@
  */
 package sa8.a15.gestioaparells.dispositius;
 
+
 import sa8.a15.gestioaparells.Dispositiu;
 
 /**
@@ -11,14 +12,12 @@ import sa8.a15.gestioaparells.Dispositiu;
  * @author batoi
  */
 public class mobil extends Dispositiu {
-    private double numSerie;
     private int memoriaInterna;
     private String marcaMobil;
     private String model;
 
-    public mobil(int numSerie, boolean teCorrentElectrica, boolean estaEnces,int memoriaInterna, String marcaMobil, String model) {
-        super(numSerie, teCorrentElectrica, estaEnces);
-        this.numSerie = numSerie;
+     public mobil(String nom, String numeroSerie, boolean teCorrentElectrica, boolean estaEnces, boolean connectatInternet, int memoriaRam, int velocitatCPU, int grandariaDisco) {
+        super(estaEnces, teCorrentElectrica, connectatInternet, nom, numeroSerie); // Corrección de la llamada a super()
         this.memoriaInterna = memoriaInterna;
         this.marcaMobil = marcaMobil;
         this.model = model;

@@ -4,6 +4,7 @@
  */
 package sa8.a15.gestioaparells.Electrodomestics;
 
+import sa8.a15.gestioaparells.Activable;
 import sa8.a15.gestioaparells.Electrodomestic;
 import sa8.a15.gestioaparells.color;
 import sa8.a15.gestioaparells.consumEnergetic;
@@ -12,7 +13,7 @@ import sa8.a15.gestioaparells.consumEnergetic;
  *
  * @author batoi
  */
-public class Llavadora extends Electrodomestic {
+public abstract class Llavadora extends Electrodomestic implements Activable{
     
     private boolean ences;
     private int carrega;

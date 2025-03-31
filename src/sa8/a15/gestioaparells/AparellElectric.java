@@ -9,26 +9,38 @@ package sa8.a15.gestioaparells;
  * @author batoi
  */
 public abstract class AparellElectric implements Endollable{
-    private int numSerie;
-    private boolean teCorrentElectrica;
-    private boolean estaEnces;
-
-    public AparellElectric(int numSerie, boolean teCorrentElectrica, boolean estaEnces) {
-        this.numSerie = numSerie;
-        this.teCorrentElectrica = false;
-        this.estaEnces = estaEnces;
+    public String nom;
+    private String numeroSerie;
+    private boolean encés;
+    
+    public AparellElectric(String nom, String numeroSerie) {
+        this.nom = nom;
+        this.numeroSerie = numeroSerie;
+        this.encés = false;
+    }
+    
+    public String getNumeroSerie() {
+        return numeroSerie;
+    }
+    
+    public String getNom() {
+        return nom;
     }
     
     @Override
-    public void donarEnergia(){
-        this.teCorrentElectrica = true;
+    public void donarEnergia() {
+        encés = true;
+        System.out.println(nom + " està encés.");
     }
     
     @Override
-    public void llevarEnergia(){
-        this.teCorrentElectrica = false;
-        this.estaEnces = false;
+    public void llevarEnergia() {
+        encés = false;
+        System.out.println(nom + " està apagat.");
     }
     
-    
+    @Override
+    public String toString() {
+        return nom + " (S/N: " + numeroSerie + ")";
+    }
 }

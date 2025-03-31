@@ -36,7 +36,6 @@ public abstract class Regleta implements Endollable{
             endollats.remove(aparell);
             return true;
         } else {
-            System.out.println("Aquest aparell no està endollat.");
             return false;
         }
     }
