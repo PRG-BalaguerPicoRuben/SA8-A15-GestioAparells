@@ -2,7 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package sa8.a15.gestioaparells;
+package sa8.a15.gestioaparells.Electrodomestics;
+
+import sa8.a15.gestioaparells.Electrodomestic;
+import sa8.a15.gestioaparells.color;
+import sa8.a15.gestioaparells.consumEnergetic;
 
 /**
  *
