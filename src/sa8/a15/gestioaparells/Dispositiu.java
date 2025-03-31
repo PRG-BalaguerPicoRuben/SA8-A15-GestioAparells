@@ -8,7 +8,7 @@ package sa8.a15.gestioaparells;
  *
  * @author batoi
  */
-public abstract class Dispositiu extends AparellElectric{
+public abstract class Dispositiu extends AparellElectric implements Activable, Connectable{
         private boolean conectatAInternet;
         
         public Dispositiu(int numSerie, boolean teCorrentElectric, boolean estaEnces){
